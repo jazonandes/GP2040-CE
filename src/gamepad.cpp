@@ -304,7 +304,7 @@ void Gamepad::processHotkeyIfNewAction(GamepadHotkey action)
 			if (options.inputMode == INPUT_MODE_PS4 && options.switchTpShareForDs4) {
 				state.buttons |= GAMEPAD_MASK_A2;
 			} else {
-				state.buttons |= GAMEPAD_MASK_S1;
+				state.buttons |= GAMEPAD_MASK_A2;
 			}
 			break;
 		case HOTKEY_INVERT_X_AXIS     :
