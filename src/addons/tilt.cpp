@@ -8,17 +8,17 @@
 // The main purpose of the left analog stick is to move the character.
 // Pressing it simultaneously with Tilt 1 will make the character walk.
 // Pressing it simultaneously with Tilt 2 will make the character walk more slowly.
-const double TILT1_FACTOR_LEFT_X = 0.35; // Adjustment factor for left analog stick X direction
-const double TILT1_FACTOR_LEFT_Y = 0.45; // Adjustment factor for left analog stick Y direction
-const double TILT2_FACTOR_LEFT_X = 0.65; // Adjustment factor for left analog stick X direction
-const double TILT2_FACTOR_LEFT_Y = 0.35; // Adjustment factor for left analog stick Y direction
+const double TILT1_FACTOR_LEFT_X = 0.59; // Adjustment factor for left analog stick X direction
+const double TILT1_FACTOR_LEFT_Y = 0.68; // Adjustment factor for left analog stick Y direction
+const double TILT2_FACTOR_LEFT_X = 0.78; // Adjustment factor for left analog stick X direction
+const double TILT2_FACTOR_LEFT_Y = 0.54; // Adjustment factor for left analog stick Y direction
 
 // The Right analog stick has 8 directions, which can be handled by pressing up, down, left, right, and simultaneously.
 // This function adds to that the ability to tilt it at an angle closer to horizontal than diagonal.
-const double TILT1_FACTOR_RIGHT_X = 0.3; // Adjustment factor for right analog stick X direction
-const double TILT1_FACTOR_RIGHT_Y = 1.7; // Adjustment factor for right analog stick Y direction
-const double TILT2_FACTOR_RIGHT_X = 0.3; // Adjustment factor for right analog stick X direction
-const double TILT2_FACTOR_RIGHT_Y = 0.3; // Adjustment factor for right analog stick Y direction
+const double TILT1_FACTOR_RIGHT_X = 0; // Adjustment factor for right analog stick X direction
+const double TILT1_FACTOR_RIGHT_Y = 0; // Adjustment factor for right analog stick Y direction
+const double TILT2_FACTOR_RIGHT_X = 0; // Adjustment factor for right analog stick X direction
+const double TILT2_FACTOR_RIGHT_Y = 0; // Adjustment factor for right analog stick Y direction
 
 bool TiltInput::available() {
 	return Storage::getInstance().getAddonOptions().tiltOptions.enabled;
