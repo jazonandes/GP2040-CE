@@ -16,24 +16,24 @@
 // Please note that only when `PIN_SLIDER_ONE` and  `PIN_SLIDER_TWO` are set to `-1` will the button combo shortcut for DP/LS/RS work.
 // The buttons are listed in GP2040 configuration, beside each the listed order is *GP2040 / Xinput / Switch / PS3 / Directinput / Arcade*
 
-#define PIN_DPAD_UP     2           // UP
-#define PIN_DPAD_DOWN   3           // DOWN
-#define PIN_DPAD_RIGHT  4           // RIGHT
-#define PIN_DPAD_LEFT   5           // LEFT
-#define PIN_BUTTON_B1   6           // B1 / A / B / Cross / 2 / K1
-#define PIN_BUTTON_B2   7           // B2 / B / A / Circle / 3 / K2
-#define PIN_BUTTON_R2   8           // R2 / RT / ZR / R2 / 8 / K3
-#define PIN_BUTTON_L2   9           // L2 / LT / ZL / L2 / 7 / K4
-#define PIN_BUTTON_B3   10          // B3 / X / Y / Square / 1 / P1
-#define PIN_BUTTON_B4   11          // B4 / Y / X / Triangle / 4 / P2
-#define PIN_BUTTON_R1   12          // R1 / RB / R / R1 / 6 / P3
-#define PIN_BUTTON_L1   13          // L1 / LB / L / L1 / 5 / P4
-#define PIN_BUTTON_S1   16          // S1 / Back / Minus / Select / 9 / Coin
-#define PIN_BUTTON_S2   17          // S2 / Start / Plus / Start / 10 / Start
-#define PIN_BUTTON_L3   18          // L3 / LS / LS / L3 / 11 / LS
-#define PIN_BUTTON_R3   19          // R3 / RS / RS / R3 / 12 / RS
-#define PIN_BUTTON_A1   20          // A1 / Guide / Home / PS / 13 / ~
-#define PIN_BUTTON_A2   21          // A2 / ~ / Capture / ~ / 14 / ~
+#define PIN_DPAD_UP     -1          // UP
+#define PIN_DPAD_DOWN   -1          // DOWN
+#define PIN_DPAD_RIGHT  -1          // RIGHT
+#define PIN_DPAD_LEFT   -1          // LEFT
+#define PIN_BUTTON_B1   14          // B1 / A / B / Cross / 2 / K1
+#define PIN_BUTTON_B2   26          // B2 / B / A / Circle / 3 / K2
+#define PIN_BUTTON_R2   27          // R2 / RT / ZR / R2 / 8 / K3
+#define PIN_BUTTON_L2   5           // L2 / LT / ZL / L2 / 7 / K4
+#define PIN_BUTTON_B3   21          // B3 / X / Y / Square / 1 / P1
+#define PIN_BUTTON_B4   22          // B4 / Y / X / Triangle / 4 / P2
+#define PIN_BUTTON_R1   19          // R1 / RB / R / R1 / 6 / P3
+#define PIN_BUTTON_L1   -1          // L1 / LB / L / L1 / 5 / P4
+#define PIN_BUTTON_S1   -1          // S1 / Back / Minus / Select / 9 / Coin
+#define PIN_BUTTON_S2   0           // S2 / Start / Plus / Start / 10 / Start
+#define PIN_BUTTON_L3   -1          // L3 / LS / LS / L3 / 11 / LS
+#define PIN_BUTTON_R3   -1          // R3 / RS / RS / R3 / 12 / RS
+#define PIN_BUTTON_A1   -1          // A1 / Guide / Home / PS / 13 / ~
+#define PIN_BUTTON_A2   -1          // A2 / ~ / Capture / ~ / 14 / ~
 #define PIN_BUTTON_FN   -1          // Hotkey Function
 #define PIN_BUTTON_TURBO -1         // Turbo
 #define PIN_BUTTON_REVERSE -1       // UDLR Reverse
@@ -236,17 +236,16 @@
 #define DUAL_DIRECTIONAL_COMBINE_MODE DUAL_COMBINE_MODE_MIXED
 
 // TILTAdd-on Options
-#define PIN_TILT_1 -1
-#define PIN_TILT_2 -1
-#define PIN_TILT_FUNCTION -1
-#define PIN_TILT_LEFT_ANALOG_UP -1
-#define PIN_TILT_LEFT_ANALOG_DOWN -1
-#define PIN_TILT_LEFT_ANALOG_LEFT -1
-#define PIN_TILT_LEFT_ANALOG_RIGHT -1
-#define PIN_TILT_RIGHT_ANALOG_UP -1
-#define PIN_TILT_RIGHT_ANALOG_DOWN -1
-#define PIN_TILT_RIGHT_ANALOG_LEFT -1
-#define PIN_TILT_RIGHT_ANALOG_RIGHT -1
+#define PIN_TILT_1 6 
+#define PIN_TILT_2 7 
+#define PIN_TILT_LEFT_ANALOG_UP 17
+#define PIN_TILT_LEFT_ANALOG_DOWN 3 
+#define PIN_TILT_LEFT_ANALOG_LEFT 4 
+#define PIN_TILT_LEFT_ANALOG_RIGHT 2
+#define PIN_TILT_RIGHT_ANALOG_UP 12
+#define PIN_TILT_RIGHT_ANALOG_DOWN 15
+#define PIN_TILT_RIGHT_ANALOG_LEFT 13
+#define PIN_TILT_RIGHT_ANALOG_RIGHT 16
 #define TILT_SOCD_MODE SOCD_MODE_NEUTRAL
 
 // BOOTSEL Button Add-on setting
