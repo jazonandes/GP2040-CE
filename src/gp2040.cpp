@@ -366,7 +366,7 @@ GP2040::RebootHotkeys::RebootHotkeys() :
 	active(false),
 	noButtonsPressedTimeout(nil_time),
 	webConfigHotkeyMask(GAMEPAD_MASK_S2 | GAMEPAD_MASK_B3 | GAMEPAD_MASK_B4),
-	bootselHotkeyMask(GAMEPAD_MASK_S1 | GAMEPAD_MASK_B3 | GAMEPAD_MASK_B4),
+	bootselHotkeyMask(GAMEPAD_MASK_S2 | GAMEPAD_MASK_B1 | GAMEPAD_MASK_B2),
 	rebootHotkeysHoldTimeout(nil_time) {
 }
 
